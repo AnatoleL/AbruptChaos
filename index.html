@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Abrupt Chaos</title>
+    <script src="script.js" defer></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div id="video-screen">
+        <div id="playerWrapper">
+            <div id="player"></div>
+        </div>
+    </div>
+    <div id="quizz-screen">
+        <!-- <div class="quizzTitleBox">
+            <div id="quizzTitle">What happens next ?</div>
+        </div> -->
+        <div class="button" id="left-answer" onclick="onAnswer(event)"></div>
+        <div class="button" id="right-answer" onclick="onAnswer(event)"></div>
+    </div>
+    <div id="home-screen">
+        <h1>ABRUPT CHAOS</h1>
+        <h2>Will you guess what comes next ?</h2>
+        <div class="button" onclick="start()">CHAOS</div>
+    </div>
+    <div id="result-screen">
+        <h1 id="result-h1">Result</h1>
+        <div class="button" onclick="startNextGame()">MORE CHAOS</div>
+    </div>
+</body>
+</html>
